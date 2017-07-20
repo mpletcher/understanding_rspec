@@ -1,6 +1,8 @@
 class Zombie
   attr_accessor :name
-  def initialize(name)
-    @name = name
+  attr_reader :sound
+  def initialize(args = {})
+    @name = args.fetch(:name)
+    @sound = args.fetch(:sound)
   end
 end
