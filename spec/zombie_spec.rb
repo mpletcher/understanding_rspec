@@ -1,7 +1,7 @@
 require_relative '../zombie'
 
 describe Zombie do
-  let(:zombie1) {Zombie.new("Scott")}
+  let(:zombie1) {Zombie.new({sound: "Ahhhh!!!", name: "Scott"})}
 
   it "has a readable name" do
     expect(zombie1.name).to eq ("Scott")
